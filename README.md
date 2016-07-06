@@ -1,18 +1,28 @@
 # cobuy.nz
 
-Cobuy landing page
+[Cobuy](https://github.com/enspiral-root-systems/cobuy) landing page at <http://cobuy.nz>
+
+## developer how to
+
+### install
 
 ```shell
-npm install --save cobuy.nz
+git clone git@github.com:enspiral-root-systems/cobuy.nz
+cd cobuy.nz
+npm install
 ```
 
-## example
+### start development server
 
-see [./example](https://ahdinosaur.github.io/cobuy.nz)
+```shell
+npm start
+```
 
-## usage
+### deploy production site
 
-### `cobuyNz = require('cobuy.nz')`
+```shell
+npm run deploy
+```
 
 ## license
 
