@@ -1,0 +1,114 @@
+
+html, body, main {
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  font-family: 'Galada', cursive;
+}
+
+section {
+  height: 100%;
+}
+
+section.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section.intro:after {
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity : 0.2;
+  z-index: -1;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro h1 {
+  margin: 0;
+}
+
+.intro p {
+}
+
+.intro button {
+  font-weight: bold;
+  border: 1px solid black;
+  background-color: #767676;
+  color: #ebebeb;
+  padding: 1rem;
+  transition: background-color 1s;
+  transition: color 1s;
+}
+
+.intro button:hover {
+  background-color: #00d177;
+  color: black;
+}
+
+@media all {
+  .intro {
+    padding: 1rem;
+  }
+  .intro:after {
+    background-image: url('images/background-small.jpg');
+  }
+  .intro h1 {
+    font-size: 4rem;
+  }
+  .intro p {
+    font-size: 1.3rem;
+  }
+  .intro button {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .intro {
+    padding: 1rem;
+  }
+  .intro h1 {
+    font-size: 7rem;
+  }
+  .intro p {
+    max-width: 500px;
+    font-size: 1.6rem;
+  }
+  .intro button {
+    font-size: 1.8rem;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .intro {
+    padding: 1rem;
+  }
+  .intro:after {
+    background-image: url('images/background-large.jpg');
+  }
+  .intro h1 {
+    font-size: 10rem;
+  }
+  .intro p {
+    max-width: 800px;
+    font-size: 2rem;
+  }
+  .intro button {
+    font-size: 3rem;
+  }
+}
