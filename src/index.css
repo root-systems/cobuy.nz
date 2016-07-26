@@ -45,7 +45,25 @@ section.intro:after {
 .intro p {
 }
 
-.intro button {
+.actions a {
+  appearance: button;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  text-decoration: none;
+  font: menu;
+  display: inline-block;
+  margin: 1rem;
+}
+
+.actions a.contact {
+  font-weight: bold;
+  border: 1px solid black;
+  background-color: #767676;
+  color: #ebebeb;
+  padding: 1rem;
+}
+
+.actions a.signup {
   font-weight: bold;
   border: 1px solid black;
   background-color: #767676;
@@ -55,7 +73,7 @@ section.intro:after {
   transition: color 1s;
 }
 
-.intro button:hover {
+.actions a.signup:hover {
   background-color: #00d177;
   color: black;
 }
@@ -73,7 +91,15 @@ section.intro:after {
   .intro p {
     font-size: 1.3rem;
   }
-  .intro button {
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .actions a {
     font-size: 1.5rem;
   }
 }
@@ -89,7 +115,12 @@ section.intro:after {
     max-width: 500px;
     font-size: 1.6rem;
   }
-  .intro button {
+
+  .actions {
+    flex-direction: row;
+  }
+
+  .actions a {
     font-size: 1.8rem;
   }
 }
@@ -108,7 +139,7 @@ section.intro:after {
     max-width: 800px;
     font-size: 2rem;
   }
-  .intro button {
+  .actions a {
     font-size: 3rem;
   }
 }
